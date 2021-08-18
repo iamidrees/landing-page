@@ -1,0 +1,123 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  animation-name: fade-inn;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  position: relative;
+  user-select: none;
+}
+
+@keyframes fade-inn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.showcase {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/trading2.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+header {
+  height: 10vh;
+  display: flex;
+  width: 100%;
+  /* background-color: rebeccapurple; */
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+}
+
+header ul li {
+  margin-left: 30px;
+  text-transform: uppercase;
+  list-style-type: none;
+  font-size: 20px;
+}
+header ul li a {
+  color: white;
+  text-decoration: none;
+  transition-delay: 0ms;
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  position: relative;
+  display: inline-block;
+}
+header ul li a:hover {
+  color: orangered;
+  transform: translateY(-10%);
+}
+
+main .container {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  position: relative;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    top: -100px;
+  }
+  to {
+    opacity: 1;
+    top: 0px;
+  }
+}
+
+main h1 {
+  font-size: 40px;
+  text-shadow: 5px 2px 15px black;
+}
+
+main p {
+  margin: 30px 0px;
+}
+
+main a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 5px solid rgb(253, 21, 68);
+  transition-property: transform;
+  transition-duration: 0.4s;
+}
+
+main a:hover {
+  color: lime;
+  border-color: orangered;
+  transform: translateY(-4px);
+}
